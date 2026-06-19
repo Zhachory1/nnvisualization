@@ -78,5 +78,13 @@ The custom Python 3 HTTP server:
 - **Python 3**: For the local server
 - **TensorFlow.js 4.22.0**: Loaded via CDN for browser-based ML
 
+## Status
+
+This repo is intentionally kept as a lightweight TensorFlow.js demo refresh, not archived and not expanded into a full ML visualization platform. The supported scope is:
+
+- Python 3 static/CSV demo server
+- Browser-based TensorFlow.js linear regression example
+- Smoke tests for page load, CSV conversion, model-training seams, and path traversal protection
+
 ## Current Features
 
