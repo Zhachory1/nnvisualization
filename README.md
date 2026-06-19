@@ -27,5 +27,56 @@ I will be demonstrating a few basic machine learning algorithms
  * Genetic algorithm
     * Self-driving behavior
 
-## Server
+## Quick Start
+
+### Running the Demo
+
+1. Start the server:
+   ```bash
+   python3 server.py
+   ```
+
+2. Open your browser to:
+   ```
+   http://localhost:8080
+   ```
+
+3. The page will:
+   - Load CSV data from `data_ex2.csv`
+   - Train a linear regression model using TensorFlow.js
+   - Display the data, training progress, and predictions
+
+### Running Tests
+
+Run the smoke test suite to verify everything works:
+
+```bash
+python3 test_smoke.py
+```
+
+This tests:
+- CSV to JSON conversion
+- Server starts correctly
+- Main page loads
+- CSV endpoint returns valid JSON
+- Security: Path traversal attempts are blocked
+- JavaScript files load correctly
+
+## Technical Details
+
+### Server
+
+The custom Python 3 HTTP server:
+- Serves static files (HTML, JS, CSS)
+- Converts CSV files to JSON on-the-fly
+- Includes path traversal protection
+
+**Security Note**: The server validates all file paths to prevent directory traversal attacks.
+
+### Dependencies
+
+- **Python 3**: For the local server
+- **TensorFlow.js 4.22.0**: Loaded via CDN for browser-based ML
+
+## Current Features
 
