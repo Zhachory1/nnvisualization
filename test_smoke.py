@@ -155,13 +155,13 @@ def test_javascript_loads():
 def test_training_demo_seams():
     """Test that page and JavaScript contain the expected training demo hooks"""
     print("\nTest 6: Training demo seams...")
-    
+
     try:
         script_response = urllib.request.urlopen(f"{BASE_URL}/main.js")
         script = script_response.read().decode('utf-8')
         page_response = urllib.request.urlopen(f"{BASE_URL}/")
         page = page_response.read().decode('utf-8')
-        
+
         assert 'model.fit(xs, ys' in script, "main.js should train the linear model"
         assert 'displayData(data)' in script, "main.js should render loaded data"
         assert 'updateTrainingStatus' in script, "main.js should render training status/loss"
@@ -169,7 +169,7 @@ def test_training_demo_seams():
         assert 'data-display' in page, "index.html should contain a data output target"
         assert 'training-status' in page, "index.html should contain a training output target"
         assert 'prediction-display' in page, "index.html should contain a prediction output target"
-        
+
         print("  ✓ Training demo hooks are present")
         return True
     except Exception as e:
