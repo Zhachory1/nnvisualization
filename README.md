@@ -61,6 +61,7 @@ This tests:
 - CSV endpoint returns valid JSON
 - Security: Path traversal attempts are blocked
 - JavaScript files load correctly
+- Model-training demo hooks render data, training status, and predictions
 
 ## Technical Details
 
