@@ -31,10 +31,11 @@ I will be demonstrating a few basic machine learning algorithms
 
 ### Running the Demo
 
-1. Start the server:
+1. Start the Python 3 server:
    ```bash
    python3 server.py
    ```
+   This serves `index.html`, `main.js`, and CSV-backed JSON endpoints from the repo root.
 
 2. Open your browser to:
    ```
@@ -66,7 +67,8 @@ This tests:
 
 ### Server
 
-The custom Python 3 HTTP server:
+The custom Python 3 HTTP server in `server.py`:
+- Runs with `python3 server.py`
 - Serves static files (HTML, JS, CSS)
 - Converts CSV files to JSON on-the-fly
 - Includes path traversal protection
