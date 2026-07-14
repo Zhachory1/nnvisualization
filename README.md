@@ -76,7 +76,7 @@ The custom Python 3 HTTP server:
 ### Dependencies
 
 - **Python 3**: For the local server
-- **TensorFlow.js 4.22.0**: Loaded via CDN for browser-based ML
+- **TensorFlow.js 4.22.0**: Pinned in `index.html` and loaded via CDN for browser-based ML
 
 ## Status
 
