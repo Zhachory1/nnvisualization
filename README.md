@@ -35,7 +35,7 @@ I will be demonstrating a few basic machine learning algorithms
    ```bash
    python3 server.py
    ```
-   This serves `index.html`, `main.js`, and CSV-backed JSON endpoints from the repo root.
+   This serves `index.html`, `main.js`, and CSV endpoints that return JSON bodies from the repo root.
 
 2. Open your browser to:
    ```
