@@ -72,7 +72,7 @@ def test_main_page():
         content = response.read().decode('utf-8')
         
         assert response.status == 200
-        assert 'TensorFlow.js' in content or 'tensorflow' in content.lower()
+        assert 'TensorFlow.js 4.22.0' in content
         assert '<html>' in content.lower()
         
         print("  ✓ Main page loads successfully")
